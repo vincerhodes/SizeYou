@@ -4,8 +4,44 @@
              xmlns:local="clr-namespace:SizeYou"
              x:Class="SizeYou.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="colorAppBackground">#C8C8C8</Color>
+            <Color x:Key="colorPrimary">#FBF9EC</Color>
 
+            <Style x:Key="styleMainButton" TargetType ="Button">
+                <Setter Property="TextColor"    Value="{StaticResource colorPrimary}" />
+                <!--<Setter Property="BackgroundColor"    Value="#97958E" />-->
+                <Setter Property="FontSize"    Value="Medium" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <Grid Padding="14" BackgroundColor="{StaticResource colorAppBackground}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Logo and app title -->
+        <StackLayout Grid.Column="0" Orientation="Horizontal">
+            <Image Source="icon.png" WidthRequest="75" HeightRequest="75" />
+            <Label Text="Size You" TextColor="{StaticResource colorPrimary}" FontSize="Medium" FontAttributes="Italic" VerticalOptions="Center" />
+        </StackLayout>
+
+        <!-- Drum Buttons -->
+        <Grid BackgroundColor="{StaticResource colorPrimary}" Grid.Row="1" Grid.ColumnSpan="2" Padding="7">
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnMeasure" Text="Measure Yourself" Style="{StaticResource styleMainButton}" BackgroundColor="Red" />
+            <Button Grid.Row="0" Grid.Column="1" x:Name="btnShop" Text="Shop" Style="{StaticResource styleMainButton}" BackgroundColor="DarkBlue" />
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnOffers" Text="View Offers" Style="{StaticResource styleMainButton}" BackgroundColor="DarkGoldenrod" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAbout" Text="About This App" Style="{StaticResource styleMainButton}" BackgroundColor="Salmon" />
+        </Grid>
+    </Grid>
 </ContentPage>
