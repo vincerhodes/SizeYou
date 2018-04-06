@@ -13,7 +13,8 @@ namespace SizeYou
 		{
 			InitializeComponent();
 
-			MainPage = new SizeYou.MainPage();
+            MainPage = new NavigationPage(new MainPage());
+			//MainPage = new SizeYou.MainPage();
 		}
 
 		protected override void OnStart ()

@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SizeYou"
-             x:Class="SizeYou.MainPage">
+             x:Class="SizeYou.AnotherPage">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -29,7 +28,7 @@
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        
+
         <!-- Selection example-->
         <StackLayout Grid.Column="1" Grid.Row="0" Orientation="Horizontal" HorizontalOptions="End" VerticalOptions="Center" >
             <Label Text="DD" TextColor="{StaticResource colorPrimary}" VerticalOptions="Center" />
@@ -44,7 +43,7 @@
                 <Picker.SelectedIndex>0</Picker.SelectedIndex>
             </Picker>
         </StackLayout>
-        
+
         <!-- Logo and app title -->
         <StackLayout Grid.Column="0" Orientation="Horizontal">
             <Image Source="icon.png" WidthRequest="50" HeightRequest="50" />
@@ -53,10 +52,10 @@
 
         <!-- Buttons -->
         <Grid BackgroundColor="{StaticResource colorPrimary}" Grid.Row="1" Grid.ColumnSpan="2" Padding="7">
-            <Button Grid.Row="0" Grid.Column="0" x:Name="btnRay" Clicked="btnRay_Clicked" Text="Ray's Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="Red" />
-            <Button Grid.Row="0" Grid.Column="1" x:Name="btnChris" Clicked="btnChris_Clicked" Text="Chris' Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="DarkBlue" />
-            <Button Grid.Row="1" Grid.Column="0" x:Name="btnJames" Clicked="btnJames_Clicked" Text="Jimmy's Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="DarkGoldenrod" />
-            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAnother" Clicked="btnAnother_Clicked" Text="Another Button That Does Nothing Useful" Style="{StaticResource styleMainButton}" BackgroundColor="Salmon" />
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnRay" Text="Feck" Style="{StaticResource styleMainButton}" BackgroundColor="Red" />
+            <Button Grid.Row="0" Grid.Column="1" x:Name="btnChris" Text="Arse" Style="{StaticResource styleMainButton}" BackgroundColor="DarkBlue" />
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnJames" Text="Shit" Style="{StaticResource styleMainButton}" BackgroundColor="DarkGoldenrod" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAnother" Text="Drink" Style="{StaticResource styleMainButton}" BackgroundColor="Salmon" />
         </Grid>
     </Grid>
 </ContentPage>

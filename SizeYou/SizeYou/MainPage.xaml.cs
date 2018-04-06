@@ -12,6 +12,27 @@ namespace SizeYou
 		public MainPage()
 		{
 			InitializeComponent();
-		}
-	}
+
+        }
+
+        private async void btnRay_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new RaysPage());
+        }
+
+        private async void btnChris_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ChrisPage());
+        }
+
+        private async void btnJames_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new JamesPage());
+        }
+
+        private async void btnAnother_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AnotherPage());
+        }
+    }
 }
