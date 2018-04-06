@@ -36,12 +36,12 @@
             <Label Text="Size You" TextColor="{StaticResource colorPrimary}" FontSize="Medium" FontAttributes="Italic" VerticalOptions="Center" />
         </StackLayout>
 
-        <!-- Drum Buttons -->
+        <!-- Buttons -->
         <Grid BackgroundColor="{StaticResource colorPrimary}" Grid.Row="1" Grid.ColumnSpan="2" Padding="7">
-            <Button Grid.Row="0" Grid.Column="0" x:Name="btnMeasure" Text="Measure Yourself" Style="{StaticResource styleMainButton}" BackgroundColor="Red" />
-            <Button Grid.Row="0" Grid.Column="1" x:Name="btnShop" Text="Shop" Style="{StaticResource styleMainButton}" BackgroundColor="DarkBlue" />
-            <Button Grid.Row="1" Grid.Column="0" x:Name="btnOffers" Text="View Offers" Style="{StaticResource styleMainButton}" BackgroundColor="DarkGoldenrod" />
-            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAbout" Text="About This App" Style="{StaticResource styleMainButton}" BackgroundColor="Salmon" />
+            <Button Grid.Row="0" Grid.Column="0" x:Name="btnMeasure" Text="Ray's Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="Red" />
+            <Button Grid.Row="0" Grid.Column="1" x:Name="btnShop" Text="Chris' Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="DarkBlue" />
+            <Button Grid.Row="1" Grid.Column="0" x:Name="btnOffers" Text="Jimmy's Practice Page" Style="{StaticResource styleMainButton}" BackgroundColor="DarkGoldenrod" />
+            <Button Grid.Row="1" Grid.Column="1" x:Name="btnAbout" Text="Another Button That Does Nothing Useful" Style="{StaticResource styleMainButton}" BackgroundColor="Salmon" />
         </Grid>
     </Grid>
 </ContentPage>
