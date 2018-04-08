@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SizeYou.ChrisPage">
@@ -35,8 +35,8 @@
             <Picker WidthRequest="130">
                 <Picker.Items>
                     <x:String>The R is First</x:String>
-                    <x:String>Ray Smells</x:String>
-                    <x:String>Chris Sucks</x:String>
+                    <x:String>Ray Smells of Roses</x:String>
+                    <x:String>Chris Is Awesome</x:String>
                     <x:String>I am Dropdown</x:String>
                     <x:String>DND Tuesday?</x:String>
                 </Picker.Items>
